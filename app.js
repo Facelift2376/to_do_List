@@ -35,5 +35,5 @@ app.get("/work", function (req, res) {
 });
 
 app.listen(PORT, function (req, res) {
-  console.log("Server is running on port ${PORT}");
+  console.log("Server is running on port " + PORT);
 });
