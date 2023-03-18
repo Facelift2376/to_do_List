@@ -4,12 +4,16 @@
     {
       "src": "./app.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "./client/build"
     }
   ],
-  "routes": [
+
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/"
+      "source": "/(.*)",
+      "destination": "app.js"
     }
   ]
 }
